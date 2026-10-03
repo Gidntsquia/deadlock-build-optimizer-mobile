@@ -1,0 +1,80 @@
+.build-switcher { min-height: 48px; }
+.build-switcher button { width: 40px; height: 40px; }
+.modal-close { width: 40px; height: 40px; }
+
+/* The item board and point chart borrow the color blocking and compact icon
+   language from the in-game build browser. */
+.build-card { border-color:#677e82; background:#d1c5aa; color:#202523; box-shadow:0 18px 55px #0005; }
+.build-card-head { background:#6bb3bb; border-bottom:3px solid #957e59; color:#182322; }
+.build-title-row h3 { color:#152120; }
+.build-title-row p { color:#28403e; }
+.build-icon { background:#e5e2ce; color:#31514b; border-color:#adc9b9; }
+.build-icon-1 { background:#d7c9e7; color:#574777; border-color:#bca4d7; }
+.build-chip { color:#223b3b; background:#b4d9d5; border-color:#5d999a; }
+.build-meta small { color:#355957; }
+.build-meta b { color:#172322; }
+.build-meta b small { color:#355957; }
+.buy-list { background:#c9bea5; padding-bottom:15px; }
+.list-caption { color:#625b4c; }
+.phase-board { padding:0 10px 12px; margin-top:7px; border:1px solid #9a8d70; box-shadow:inset 0 1px #e4d7bd; }
+.phase-board-early { background:#bcae90; }
+.phase-board-mid { background:#aea48d; }
+.phase-board-late { background:#b1a98f; }
+.phase-label { color:#342e25; border-bottom:1px solid #897c63; padding:9px 5px 7px; margin-bottom:9px; }
+.phase-label>span { color:#6d614d; }
+.phase-label>i { background:#95876c; }
+.phase-early,.phase-mid,.phase-late { color:#342e25; }
+.item-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(104px,1fr)); gap:8px; }
+.item-tile { position:relative; min-width:0; min-height:139px; padding:9px 7px 8px; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; gap:4px; border:1px solid #5f6157; border-radius:4px; color:#1b201e; cursor:pointer; overflow:hidden; box-shadow:0 3px 5px #332a1c4a,inset 0 1px #ffffff65; transition:transform .15s,filter .15s; }
+.item-tile:hover { transform:translateY(-3px); filter:brightness(1.08); }
+.tile-weapon { background:linear-gradient(155deg,#e6c38e,#bc9361); }
+.tile-spirit { background:linear-gradient(155deg,#c9b6d7,#9d88b2); }
+.tile-vitality { background:linear-gradient(155deg,#c6d1a2,#94a97b); }
+.tile-index { position:absolute; top:4px; left:5px; font:8px var(--mono); color:#f4e9cf; text-shadow:0 1px 3px #000; }
+.tile-tier { position:absolute; top:3px; right:4px; min-width:18px; padding:2px 4px; border-radius:2px; color:#15201d; background:#e8d7ae; text-align:center; font:700 8px var(--mono); box-shadow:0 1px 3px #0005; }
+.tile-art { width:66px; height:66px; margin-top:6px; display:grid; place-items:center; border:1px solid #f1dfb373; border-radius:4px; background:#20211f; box-shadow:0 3px 7px #0005; overflow:hidden; }
+.tile-art img { width:100%; height:100%; object-fit:cover; }
+.tile-name { width:100%; min-height:28px; display:flex; align-items:center; justify-content:center; text-align:center; color:#171c19; font:700 10px/1.16 var(--display); text-shadow:0 1px #ffffff59; }
+.tile-price { color:#302a1e; font:8px var(--mono); white-space:nowrap; }
+.tile-badge { position:absolute; bottom:5px; right:5px; font:6px var(--mono); font-style:normal; color:#495049; opacity:.58; }
+.tile-badge.is-core { opacity:1; padding:2px 3px; color:#0d2917; background:#a4dba9; border:1px solid #508856; }
+.build-footer { background:#5d5140; border-top:2px solid #968667; color:#f0e8d6; }
+.soul-total>span { color:#c9b995; }
+.soul-total>b { color:#f4ebd7; }
+.synergy-note b { color:#ead49b; }
+.synergy-note small { color:#d3c8b1; }
+.build-tabs button { min-height:49px; }
+.lower-grid { grid-template-columns:1fr; }
+.ability-card { background:#243955; border-color:#526b8b; color:#f3eee1; }
+.ability-card .panel-icon { color:#dcc4f8; background:#1b2d47; border-color:#657693; }
+.ability-card .panel-head h3 { color:#f1e8d4; }
+.ability-card .panel-head .eyebrow,.ability-card .panel-description { color:#bbc9d8; }
+.ability-card .point-count { color:#ded2b4; border-color:#687991; background:#1d2d44; }
+.ability-matrix-scroll { max-width:100%; overflow-x:auto; border:1px solid #667992; border-radius:4px; background:#112239; scrollbar-color:#8490a1 #182c45; }
+.ability-matrix { min-width:720px; display:grid; grid-template-columns:minmax(150px,1.6fr) repeat(16,minmax(31px,1fr)); padding:6px; }
+.matrix-corner,.matrix-point-head { min-height:28px; display:grid; place-items:center; background:#15253a; color:#b6c4d2; font:9px var(--mono); border-bottom:1px solid #334760; }
+.matrix-corner { justify-items:start; padding-left:9px; text-transform:uppercase; letter-spacing:.08em; }
+.matrix-row { display:contents; }
+.matrix-ability,.matrix-cell { min-height:49px; display:flex; align-items:center; justify-content:center; background:#203653; border-bottom:1px solid #3b5069; }
+.matrix-row:nth-of-type(2n) .matrix-ability,.matrix-row:nth-of-type(2n) .matrix-cell { background:#1b2f4a; }
+.matrix-ability { position:sticky; left:6px; z-index:1; justify-content:flex-start; gap:8px; padding:4px 7px; color:#f0e7d4; }
+.matrix-icon { width:32px; height:32px; flex:none; display:grid; place-items:center; overflow:hidden; border-radius:4px; color:#e3bcf6; background:#101c2d; border:1px solid #60748b; font:12px var(--mono); }
+.matrix-icon img { width:100%; height:100%; object-fit:cover; }
+.matrix-ability b { overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-size:9px; font-weight:600; }
+.matrix-cell { position:relative; }
+.matrix-cell.has-point i { width:21px; height:21px; display:grid; place-items:center; border-radius:6px; background:#24202f; color:#d4c0a1; font:700 10px var(--mono); font-style:normal; box-shadow:0 2px 3px #0006; }
+.matrix-cell.point-unlock i { color:#df8dff; }
+.validation-card { background:#111816; }
+@media(max-width:680px) {
+  .item-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:6px; }
+  .item-tile { min-height:128px; padding:7px 4px; }
+  .tile-art { width:58px; height:58px; }
+  .tile-name { font-size:9px; }
+  .buy-list { padding-left:10px; padding-right:10px; }
+  .phase-board { padding-left:6px; padding-right:6px; }
+  .matrix-ability { left:6px; }
+}
+@media(max-width:380px) {
+  .item-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .tile-art { width:64px; height:64px; }
+}
